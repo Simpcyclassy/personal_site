@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/images/logo.png">
-    <Header msg="TypeScript App personal website"/>
+    <Header msg="Chioma's personal blog"/>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { Component, Vue } from 'vue-property-decorator'
 import Header from '@/components/Header.vue' // @ is an alias to /src
 
-@Options({
+@Component({
   components: {
     Header
   }

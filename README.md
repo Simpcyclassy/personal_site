@@ -1,4 +1,4 @@
-# personal
+# personal_site
 
 ## Project setup
 ```

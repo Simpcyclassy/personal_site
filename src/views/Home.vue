@@ -1,13 +1,13 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/images/logo.png">
-    <Header msg="Chioma's personal blog"/>
-  </div>
+  <v-parallax dark src="../assets/images/coding-chioma.png" height="1000">
+    <Header />
+  </v-parallax>
+
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Header from '@/components/Header.vue' // @ is an alias to /src
+import Header from '@/components/Header.vue'
 
 @Component({
   components: {
@@ -16,3 +16,4 @@ import Header from '@/components/Header.vue' // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+<style scoped></style>

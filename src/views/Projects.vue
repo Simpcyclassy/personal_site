@@ -11,6 +11,6 @@ import Header from '@/components/Header.vue'
     Header
   }
 })
-export default class Resume extends Vue {}
+export default class Projects extends Vue {}
 </script>
 <style scoped></style>

@@ -30,12 +30,12 @@ export default Vue.extend({
         component: 'Blog'
       },
       {
-        path: '/resume',
-        component: 'Resume'
-      },
-      {
         path: '/projects',
         component: 'Projects'
+      },
+      {
+        path: '/resume',
+        component: 'Resume'
       }
     ]
   })

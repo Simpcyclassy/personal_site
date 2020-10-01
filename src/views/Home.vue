@@ -65,97 +65,97 @@
                 src="../assets/images/drinking-chioma.jpg"
               >
 
-              <v-card-title class="white--text mt-8">
-                <p class="ml-3">
-                  Read my blog
-                </p>
-              </v-card-title>
-            </v-img>
+                <v-card-title class="white--text mt-8">
+                  <p class="ml-3">
+                    Read my blog
+                  </p>
+                </v-card-title>
+              </v-img>
 
-            <v-card-text>
-              <div class="font-weight-bold ml-8 mb-2">
-                Latest
-              </div>
+              <v-card-text>
+                <div class="font-weight-bold ml-8 mb-2">
+                  Latest
+                </div>
 
-              <v-timeline
-                align-top
-                dense
-              >
-                <v-timeline-item
-                  color="secondary"
-                  small
+                <v-timeline
+                  align-top
+                  dense
                 >
-                  <div>
-                    <div class="font-weight-normal">
-                      <strong>lorem ipsum</strong> @7:30am
+                  <v-timeline-item
+                    color="secondary"
+                    small
+                  >
+                    <div>
+                      <div class="font-weight-normal">
+                        <strong>lorem ipsum</strong> @7:30am
+                      </div>
+                      <div>Blogpost x</div>
                     </div>
-                    <div>Blogpost x</div>
-                  </div>
-                </v-timeline-item>
-                <v-timeline-item
-                  color="accent"
-                  small
-                >
-                  <div>
-                    <div class="font-weight-normal">
-                      <strong>lorem ipsum</strong> @7:30am
+                  </v-timeline-item>
+                  <v-timeline-item
+                    color="accent"
+                    small
+                  >
+                    <div>
+                      <div class="font-weight-normal">
+                        <strong>lorem ipsum</strong> @7:30am
+                      </div>
+                      <div>Blogpost x</div>
                     </div>
-                    <div>Blogpost x</div>
-                  </div>
-                </v-timeline-item>
-              </v-timeline>
-            </v-card-text>
-          </v-card>
-        </v-hover>
-      </v-col>
-      <v-col
-        cols="12"
-        sm="4"
-        class="text-center"
-      >
-        <v-hover
+                  </v-timeline-item>
+                </v-timeline>
+              </v-card-text>
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="4"
+          class="text-center"
+        >
+          <v-hover
+            v-slot:default="{ hover }"
+            open-delay="200"
+          >
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              :elevation="hover ? 16 : 2"
+              :class="{ 'on-hover': hover }"
+            >
+              <Timeline id="simpcyclassy" sourceType="profile" :options="{ tweetLimit: '2', theme: 'dark'}"/>
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="4"
+          class="text-center"
+        >
+          <v-hover
           v-slot:default="{ hover }"
           open-delay="200"
-        >
-          <v-card
-            class="mx-auto"
-            max-width="344"
-            :elevation="hover ? 16 : 2"
-            :class="{ 'on-hover': hover }"
           >
-            <Timeline id="simpcyclassy" sourceType="profile" :options="{ tweetLimit: '2', theme: 'dark'}"/>
-          </v-card>
-        </v-hover>
-      </v-col>
-      <v-col
-        cols="12"
-        sm="4"
-        class="text-center"
-      >
-        <v-hover
-        v-slot:default="{ hover }"
-        open-delay="200"
-        >
-          <v-card
-            max-width="400"
-            :elevation="hover ? 16 : 2"
-            :class="{ 'on-hover': hover }"
-          >
-            <v-img
-              height="200px"
-              src="../assets/images/firefox-voice.png"
+            <v-card
+              max-width="400"
+              :elevation="hover ? 16 : 2"
+              :class="{ 'on-hover': hover }"
             >
-              <v-card-title class="white--text mt-8">
-                <p class="ml-3">
-                  See my Recent Projects
-                </p>
-              </v-card-title>
-            </v-img>
+              <v-img
+                height="200px"
+                src="../assets/images/firefox-voice.png"
+              >
+                <v-card-title class="white--text mt-8">
+                  <p class="ml-3">
+                    See my Recent Projects
+                  </p>
+                </v-card-title>
+              </v-img>
 
-            <v-card-text>
-              <div class="font-weight-bold ml-8 mb-2">
-                My projects
-              </div>
+              <v-card-text>
+                <div class="font-weight-bold ml-8 mb-2">
+                  My projects
+                </div>
                 <v-timeline
                   align-top
                   dense

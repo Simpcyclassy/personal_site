@@ -3,8 +3,9 @@
     <v-btn
       v-for="({ path, component }) in routes"
       :key="path"
-      class="ma-2 button-color"
-      color="secondary"
+      class="ma-2"
+      outlined
+      color="primary"
       :to="path"
     >
       {{ component }}
@@ -19,7 +20,6 @@ export default Vue.extend({
   name: 'Header',
 
   data: () => ({
-    activeTab: false,
     routes: [
       {
         path: '/',
@@ -30,12 +30,12 @@ export default Vue.extend({
         component: 'Blog'
       },
       {
-        path: '/projects',
-        component: 'Projects'
-      },
-      {
         path: '/resume',
         component: 'Resume'
+      },
+      {
+        path: '/projects',
+        component: 'Projects'
       }
     ]
   })
@@ -44,6 +44,6 @@ export default Vue.extend({
 
 <style scoped>
 .header-container {
-  margin-top: 50px;
+  margin: 20px;
 }
 </style>

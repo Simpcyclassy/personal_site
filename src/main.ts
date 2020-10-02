@@ -1,11 +1,10 @@
 import Vue from 'vue'
+import VueTypedJs from 'vue-typed-js'
 import App from './App.vue'
 import './assets/sass/index.sass'
 import vuetify from './plugins/vuetify'
 import router from './router'
 import store from './store'
-
-const VueTypedJs = require('vue-typed-js')
 
 Vue.config.productionTip = false
 Vue.use(VueTypedJs)

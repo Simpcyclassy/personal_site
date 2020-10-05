@@ -1,10 +1,11 @@
 <template>
   <v-row justify="space-around" class="header-container">
     <v-btn
-      v-for="({ path, component }) in routes"
+      v-for="({ path, component }) in links"
       :key="path"
       class="ma-2"
       outlined
+      rounded
       color="primary"
       :to="path"
     >
@@ -20,7 +21,7 @@ export default Vue.extend({
   name: 'Header',
 
   data: () => ({
-    routes: [
+    links: [
       {
         path: '/',
         component: 'Home'

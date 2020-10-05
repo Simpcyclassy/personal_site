@@ -64,19 +64,16 @@
                 height="200px"
                 src="../assets/images/drinking-chioma.jpg"
               >
-
                 <v-card-title class="white--text mt-8">
                   <p class="ml-3">
                     Read my blog
                   </p>
                 </v-card-title>
               </v-img>
-
               <v-card-text>
                 <div class="font-weight-bold ml-8 mb-2">
                   Latest
                 </div>
-
                 <v-timeline
                   align-top
                   dense
@@ -108,6 +105,7 @@
             </v-card>
           </v-hover>
         </v-col>
+
         <v-col
           cols="12"
           sm="4"
@@ -127,6 +125,7 @@
             </v-card>
           </v-hover>
         </v-col>
+
         <v-col
           cols="12"
           sm="4"
@@ -151,7 +150,6 @@
                   </p>
                 </v-card-title>
               </v-img>
-
               <v-card-text>
                 <div class="font-weight-bold ml-8 mb-2">
                   My projects
